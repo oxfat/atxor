@@ -1,304 +1,280 @@
--
-  email: admin
-  password: 'admin123'
-  key: admin
-  role: 'admin'
-  securityQuestion:
-    id: 2
-    answer: '@xI98PxDO+06!'
+- address:
+  - city: Test
+    country: Test
+    fullName: Administrator
+    mobileNum: 1234567890
+    state: Test
+    streetAddress: 0815 Test Street
+    zipCode: '4711'
+  card:
+  - cardNum: 4716190207394368
+    expMonth: 2
+    expYear: 2081
+    fullName: Administrator
+  - cardNum: 4024007105648108
+    expMonth: 4
+    expYear: 2086
+    fullName: Administrator
+  email: admin@atxor.com
   feedback:
-    comment: 'I love this shop! Best products in town! Highly recommended!'
+    comment: I love this shop! Best products in town! Highly recommended!
     rating: 5
-  address:
-    - fullName: 'Administrator'
-      mobileNum: 1234567890
-      zipCode: '4711'
-      streetAddress: '0815 Test Street'
-      city: 'Test'
-      state: 'Test'
-      country: 'Test'
-  card:
-    - fullName: 'Administrator'
-      cardNum: 4716190207394368
-      expMonth: 2
-      expYear: 2081
-    - fullName: 'Administrator'
-      cardNum: 4024007105648108
-      expMonth: 4
-      expYear: 2086
--
-  email: jim
-  password: 'ncc-1701'
-  key: jim
-  role: 'customer'
-  walletBalance: 100
+  key: admin
+  password: admin123
+  role: admin
   securityQuestion:
-    id: 1
-    answer: 'Samuel' # https://en.wikipedia.org/wiki/James_T._Kirk
+    answer: '@xI98PxDO+06!'
+    id: 2
+- address:
+  - city: Deck 5
+    country: Space
+    fullName: Jim
+    mobileNum: 523423432
+    state: USS Enterprise
+    streetAddress: Room 3F 121
+    zipCode: '1701'
+  - city: Deneva
+    country: United Federation of Planets
+    fullName: Sam
+    mobileNum: 1000000783
+    state: Beta Darius System
+    streetAddress: Deneva Colony
+    zipCode: GSK783
+  card:
+  - cardNum: 5107891722278705
+    expMonth: 11
+    expYear: 2099
+    fullName: Jim
+  email: jim@atxor.com
   feedback:
-    comment: 'Great shop! Awesome service!'
+    comment: Great shop! Awesome service!
     rating: 4
-  address:
-    - fullName: 'Jim'
-      mobileNum: 523423432
-      zipCode: '1701'
-      streetAddress: 'Room 3F 121'
-      city: 'Deck 5'
-      state: 'USS Enterprise'
-      country: 'Space'
-    - fullName: 'Sam'
-      mobileNum: 1000000783
-      zipCode: 'GSK783'
-      streetAddress: 'Deneva Colony'
-      city: 'Deneva'
-      state: 'Beta Darius System'
-      country: 'United Federation of Planets'
+  key: jim
+  password: ncc-1701
+  role: customer
+  securityQuestion:
+    answer: Samuel
+    id: 1
+  walletBalance: 100
+- address:
+  - city: New New York
+    country: Planet Earth
+    fullName: Bender
+    mobileNum: 797675345
+    state: New New York
+    streetAddress: Robot Arms Apts 42
+    zipCode: '10001'
   card:
-    - fullName: 'Jim'
-      cardNum: 5107891722278705
-      expMonth: 11
-      expYear: 2099
--
-  email: bender
-  password: 'OhG0dPlease1nsertLiquor!'
+  - cardNum: 4716943969046208
+    expMonth: 2
+    expYear: 2081
+    fullName: Bender
+  email: bender@atxor.com
+  feedback:
+    comment: Nothing useful available here!
+    rating: 1
   key: bender
-  role: 'customer'
+  password: OhG0dPlease1nsertLiquor!
+  role: customer
   securityQuestion:
+    answer: Stop'n'Drop
     id: 10
-    answer: "Stop'n'Drop" # http://futurama.wikia.com/wiki/Suicide_booth
-  feedback:
-    comment: 'Nothing useful available here!'
-    rating: 1
-  address:
-    - fullName: 'Bender'
-      mobileNum: 797675345
-      zipCode: '10001'
-      streetAddress: 'Robot Arms Apts 42'
-      city: 'New New York'
-      state: 'New New York'
-      country: 'Planet Earth'
+- address:
+  - city: Uetersen
+    country: Germany
+    fullName: Bjoern Kimminich
+    mobileNum: 4917000001
+    state: Schleswig-Holstein
+    streetAddress: Am Lokalhorst 42
+    zipCode: '25436'
   card:
-    - fullName: 'Bender'
-      cardNum: 4716943969046208
-      expMonth: 2
-      expYear: 2081
--
+  - cardNum: 4815205605542754
+    expMonth: 12
+    expYear: 2092
+    fullName: Bjoern Kimminich
+  customDomain: true
   email: bjoern.kimminich@gmail.com
-  username: bkimminich
-  password: 'bW9jLmxpYW1nQGhjaW5pbW1pay5ucmVvamI='
-  customDomain: true
   key: bjoernGoogle
-  role: 'admin'
-  address:
-    - fullName: 'Bjoern Kimminich'
-      mobileNum: 4917000001
-      zipCode: '25436'
-      streetAddress: 'Am Lokalhorst 42'
-      city: 'Uetersen'
-      state: 'Schleswig-Holstein'
-      country: 'Germany'
-  card:
-    - fullName: 'Bjoern Kimminich'
-      cardNum: 4815205605542754
-      expMonth: 12
-      expYear: 2092
--
-  email: ciso
-  password: 'mDLx?94T~1CfVfZMzw@sJ9f?s3L6lbMqE70FfI8^54jbNikY5fymx7c!YbJb'
+  password: bW9jLmxpYW1nQGhjaW5pbW1pay5ucmVvamI=
+  role: admin
+  username: bkimminich
+- email: ciso@atxor.com
   key: ciso
-  role: 'deluxe'
+  password: mDLx?94T~1CfVfZMzw@sJ9f?s3L6lbMqE70FfI8^54jbNikY5fymx7c!YbJb
+  role: deluxe
   securityQuestion:
+    answer: Brd?j8sEMziOvvBf§Be?jFZ77H?hgm
     id: 7
-    answer: 'Brd?j8sEMziOvvBf§Be?jFZ77H?hgm'
--
-  email: support
-  password: 'J6aVjTgOpRs@?5l!Zkq2AYnCE@RF$P'
+- email: support@atxor.com
   key: support
-  role: 'admin'
+  password: J6aVjTgOpRs@?5l!Zkq2AYnCE@RF$P
+  role: admin
   securityQuestion:
+    answer: SC OLEA SRL
     id: 10
-    answer: 'SC OLEA SRL' # http://www.olea.com.ro/
--
-  email: morty
-  password: 'focusOnScienceMorty!focusOnScience'
+- email: morty@atxor.com
   key: morty
-  role: 'customer'
-  walletBalance: 100
+  password: focusOnScienceMorty!focusOnScience
+  role: customer
   securityQuestion:
+    answer: 5N0wb41L
     id: 7
-    answer: '5N0wb41L' # http://rickandmorty.wikia.com/wiki/Snuffles
--
-  email: mc.safesearch
-  password: 'Mr. N00dles'
+  walletBalance: 100
+- email: mc.safesearch@atxor.com
   key: rapper
-  role: 'customer'
+  password: Mr. N00dles
+  role: customer
+  securityQuestion:
+    answer: I even shared my pizza bagels with you!
+    id: 8
   walletBalance: 13337
-  securityQuestion:
-    id: 8
-    answer: 'I even shared my pizza bagels with you!'
--
-  email: J12934
-  password: '0Y8rMnww$*9VFYE§59-!Fg1L6t&6lB'
+- email: J12934@atxor.com
   key: jannik
-  role: 'admin'
+  password: 0Y8rMnww$*9VFYE§59-!Fg1L6t&6lB
+  role: admin
   securityQuestion:
+    answer: azjTLprq2im6p86RbFrA41L
     id: 1
-    answer: 'azjTLprq2im6p86RbFrA41L'
--
-  email: wurstbrot
-  username: wurstbrot
-  password: 'EinBelegtesBrotMitSchinkenSCHINKEN!'
-  totpSecret: IFTXE3SPOEYVURT2MRYGI52TKJ4HC3KH
+- email: wurstbrot@atxor.com
   key: timo
-  role: 'admin'
+  password: EinBelegtesBrotMitSchinkenSCHINKEN!
+  role: admin
   securityQuestion:
+    answer: NZMJLjEinU7TFElDIYW8
     id: 1
-    answer: 'NZMJLjEinU7TFElDIYW8'
--
-  email: amy
-  password: 'K1f.....................'
+  totpSecret: IFTXE3SPOEYVURT2MRYGI52TKJ4HC3KH
+  username: wurstbrot
+- email: amy@atxor.com
   key: amy
-  role: 'customer'
-  walletBalance: 48
+  password: K1f.....................
+  role: customer
   securityQuestion:
+    answer: Dr. Dr. Dr. Dr. Zoidberg
     id: 8
-    answer: 'Dr. Dr. Dr. Dr. Zoidberg'
--
-  email: bjoern
-  password: 'monkey summer birthday are all bad passwords but work just fine in a long passphrase'
-  key: bjoern
-  profileImage: '12.png'
-  role: 'admin'
+  walletBalance: 48
+- email: bjoern@atxor.com
   isAdmin: true
+  key: bjoern
+  password: monkey summer birthday are all bad passwords but work just fine in a long
+    passphrase
+  profileImage: 12.png
+  role: admin
   securityQuestion:
+    answer: West-2082
     id: 9
-    answer: 'West-2082' # http://www.alte-postleitzahlen.de/uetersen
--
+- customDomain: true
   email: bjoern@owasp.org
-  password: 'kitten lesser pooch karate buffoon indoors'
-  customDomain: true
   key: bjoernOwasp
-  role: 'deluxe'
-  profileImage: '13.jpg'
+  password: kitten lesser pooch karate buffoon indoors
+  profileImage: 13.jpg
+  role: deluxe
   securityQuestion:
+    answer: Zaya
     id: 7
-    answer: 'Zaya' # https://www.youtube.com/watch?v=Lu0-kDdtVf4
--
-  email: chris.pike
-  password: 'uss enterprise'
+- deletedFlag: true
+  email: chris.pike@atxor.com
   key: chris
-  role: 'customer'
-  deletedFlag: true
+  password: uss enterprise
+  role: customer
   securityQuestion:
+    answer: greenwood
     id: 1
-    answer: 'greenwood'
--
-  email: accountant
-  password: 'i am an awesome accountant'
+- email: accountant@atxor.com
   key: accountant
-  role: 'accounting'
-  lastLoginIp: '123.456.789'
+  lastLoginIp: 123.456.789
+  password: i am an awesome accountant
+  role: accounting
   securityQuestion:
+    answer: sdAffsdfrefrbgreq3423
     id: 7
-    answer: 'sdAffsdfrefrbgreq3423'
--
-  email: uvogin
-  password: 'muda-muda > ora-ora' # https://www.youtube.com/watch?v=vnJv8IoLMwc
+- email: uvogin@atxor.com
   key: uvogin
-  role: 'customer'
-  walletBalance: 100
+  password: muda-muda > ora-ora
+  role: customer
   securityQuestion:
+    answer: Silence of the Lambs
     id: 12
-    answer: 'Silence of the Lambs' # https://www.imdb.com/title/tt0102926/
--
-  email: demo
-  password: 'demo'
-  customDomain: true
-  key: test
-  role: 'customer'
-  walletBalance: 200
-  securityQuestion:
-    id: 10
-    answer: 'ACME Inc.'
-  address:
-    - fullName: 'Tim Tester'
-      mobileNum: 4917000000
-      zipCode: '12345'
-      streetAddress: 'Dummystreet 42'
-      city: 'Mocktown'
-      state: 'Testilvania'
-      country: 'United Fakedom'
+  walletBalance: 100
+- address:
+  - city: Mocktown
+    country: United Fakedom
+    fullName: Tim Tester
+    mobileNum: 4917000000
+    state: Testilvania
+    streetAddress: Dummystreet 42
+    zipCode: '12345'
   card:
-    - fullName: 'Tim Tester'
-      cardNum: 1234567812345678
-      expMonth: 12
-      expYear: 2099
--
-  email: john
-  username: j0hNny
-  password: 'y&x5Z#f6W532Z4445#Ae2HkwZVyDb7&oCUaDzFU'
+  - cardNum: 1234567812345678
+    expMonth: 12
+    expYear: 2099
+    fullName: Tim Tester
+  customDomain: true
+  email: demo@atxor.com
+  key: test
+  password: demo
+  role: customer
+  securityQuestion:
+    answer: ACME Inc.
+    id: 10
+  walletBalance: 200
+- email: john@atxor.com
   key: john
-  role: 'customer'
--
-  email: emma
-  username: E=ma²
-  password: 'y&x5Z#f6W532ZUf$q3DsdgfgfgxxUsvoCUaDzFU'
+  password: y&x5Z#f6W532Z4445#Ae2HkwZVyDb7&oCUaDzFU
+  role: customer
+  username: j0hNny
+- email: emma@atxor.com
   key: emma
-  role: 'customer'
--
-  email: stan
-  username: SmilinStan
-  password: 'ship coffin krypt cross estate supply insurance asbestos souvenir'
+  password: y&x5Z#f6W532ZUf$q3DsdgfgfgxxUsvoCUaDzFU
+  role: customer
+  username: E=ma²
+- email: stan@atxor.com
   key: stan
-  profileImage: '20.jpg'
-  role: 'deluxe'
+  password: ship coffin krypt cross estate supply insurance asbestos souvenir
+  profileImage: 20.jpg
+  role: deluxe
   securityQuestion:
+    answer: Used Ship Emporium
     id: 10
-    answer: "Used Ship Emporium" # https://monkeyisland.fandom.com/wiki/Stan_S._Stanman
--
-  email: ethereum
-  username: evmrox
-  password: 'private'
-  key: evm
-  role: 'deluxe'
+  username: SmilinStan
+- email: ethereum@atxor.com
   feedback:
-    comment: 'Please send me the juicy chatbot NFT in my wallet at /juicy-nft : "purpose betray marriage blame crunch monitor spin slide donate sport lift clutch"'
+    comment: 'Please send me the juicy chatbot NFT in my wallet at /juicy-nft : "purpose
+      betray marriage blame crunch monitor spin slide donate sport lift clutch"'
     rating: 1
+  key: evm
+  password: private
+  role: deluxe
   securityQuestion:
+    answer: Used Emporium
     id: 10
-    answer: "Used Emporium"
--
-  email: testing
-  password: 'IamUsedForTesting'
+  username: evmrox
+- email: testing@atxor.com
   key: LetUsTest
-  role: 'admin'
--
-  email: cloud-admin
-  password: 'DVKH3gn7G$2Rk!f5Tz@9Lm&Qp4Wx#Yj8Bc0Ns6Ue1Io7Ah2Sd4Fg6Hj8Kl0Zx3Cv5Bn7Mq9Wr1Et3Yu5Ip'
+  password: IamUsedForTesting
+  role: admin
+- email: cloud-admin@atxor.com
   key: cloudAdmin
-  role: 'admin'
-  profileImage: 'default.svg'
+  password: DVKH3gn7G$2Rk!f5Tz@9Lm&Qp4Wx#Yj8Bc0Ns6Ue1Io7Ah2Sd4Fg6Hj8Kl0Zx3Cv5Bn7Mq9Wr1Et3Yu5Ip
+  profileImage: default.svg
+  role: admin
   securityQuestion:
+    answer: xK9#mP2$vL5nQ8wR3jF6hT0yB7cA4dG1eU
     id: 10
-    answer: 'xK9#mP2$vL5nQ8wR3jF6hT0yB7cA4dG1eU'
--
-  email: basil
-  password: 'my little nest of vipers'
+- email: basil@atxor.com
   key: basil
-  role: 'customer'
-  walletBalance: 2
+  password: my little nest of vipers
+  role: customer
   securityQuestion:
+    answer: English Riviera
     id: 14
-    answer: 'English Riviera'
--
-  email: passkey-user
-  username: passkey-user
-  password: 'FeuLJY3w9zXsGas9HeDNK2aDYARxc42HaKinEyZnqLcdqi8E'
+  walletBalance: 2
+- email: passkey-user@atxor.com
   key: passkeyUser
-  role: 'customer'
   passkeys:
-    -
-      credentialID: VfPGsco9UbQv4890ndfO6Go1PCtZ9yEFGWyseVvk4-Y
-      publicKey: pQECAyYgASFYICdISWKC7Mr6wsaotwAhPSmkI9VYOdwpZ2Jkz91Z3QvLIlgg6xFosS504iKBgaI71rqsqEG8220VzwcE9H786P2Z3QY
-      transports: internal
-      aaguid: fbfc3007-154e-4ecc-8c0b-6e020557d7bd
+  - aaguid: fbfc3007-154e-4ecc-8c0b-6e020557d7bd
+    credentialID: VfPGsco9UbQv4890ndfO6Go1PCtZ9yEFGWyseVvk4-Y
+    publicKey: pQECAyYgASFYICdISWKC7Mr6wsaotwAhPSmkI9VYOdwpZ2Jkz91Z3QvLIlgg6xFosS504iKBgaI71rqsqEG8220VzwcE9H786P2Z3QY
+    transports: internal
+  password: FeuLJY3w9zXsGas9HeDNK2aDYARxc42HaKinEyZnqLcdqi8E
+  role: customer
+  username: passkey-user

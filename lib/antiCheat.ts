@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.
+ * Copyright (c) 2024 Atxor Security
  * SPDX-License-Identifier: MIT
  */
 
@@ -14,7 +14,7 @@ import { getCodeChallenges } from './codingChallenges'
 import logger from './logger'
 import { type NextFunction, type Request, type Response } from 'express'
 import * as utils from './utils'
-import { type ChallengeKey } from '@juice-shop/models/challenge'
+import { type ChallengeKey } from '@atxor/models/challenge'
 
 const tightlyCoupledChallenges = {
   loginAdminChallenge: ['weakPasswordChallenge'],
