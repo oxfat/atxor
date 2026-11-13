@@ -1,0 +1,40 @@
+FROM node:24 AS installer
+COPY . /juice-shop
+WORKDIR /juice-shop
+RUN npm install -g typescript@^6.0.3
+RUN npm install --omit=dev
+RUN npm dedupe --omit=dev
+RUN rm -rf frontend/node_modules
+RUN rm -rf frontend/.angular
+RUN rm -rf frontend/src/assets
+RUN mkdir -p logs data uploads/ftp
+RUN chown -R 65532 logs data uploads ftp
+RUN chgrp -R 0 ftp/ frontend/dist/ logs/ data/ i18n/ uploads/
+RUN chmod -R g=u ftp/ frontend/dist/ logs/ data/ i18n/ uploads/
+RUN rm ftp/legal.md || true
+
+FROM gcr.io/distroless/nodejs24-debian13
+ARG BUILD_DATE
+ARG VCS_REF
+LABEL maintainer="Atxor Security <admin@atxor.my.id>" \
+    org.opencontainers.image.title="Atxor Security Lab" \
+    org.opencontainers.image.description="Web application security training platform by Atxor Security" \
+    org.opencontainers.image.authors="Atxor Security Team" \
+    org.opencontainers.image.vendor="Atxor Security" \
+    org.opencontainers.image.documentation="https://lab.atxor.my.id" \
+    org.opencontainers.image.licenses="MIT" \
+    org.opencontainers.image.version="20.4.0-SNAPSHOT" \
+    org.opencontainers.image.url="https://lab.atxor.my.id" \
+    org.opencontainers.image.source="https://github.com/oxfat/atxor" \
+    org.opencontainers.image.revision=$VCS_REF \
+    org.opencontainers.image.created=$BUILD_DATE
+WORKDIR /juice-shop
+COPY --from=installer --chown=65532:0 /juice-shop .
+EXPOSE 3000
+ENV PORT=3000
+ENV NODE_ENV=production
+# Persistent storage dirs
+RUN mkdir -p /data /uploads && chown -R 65532:0 /data /uploads
+ENV DATABASE_FILENAME=/data/juiceshop.sqlite
+USER 65532
+CMD ["/juice-shop/build/app.js"]

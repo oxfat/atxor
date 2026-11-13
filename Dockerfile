@@ -23,15 +23,15 @@ FROM gcr.io/distroless/nodejs24-debian13
 ARG BUILD_DATE
 ARG VCS_REF
 LABEL maintainer="Bjoern Kimminich <bjoern.kimminich@owasp.org>" \
-    org.opencontainers.image.title="OWASP Juice Shop" \
-    org.opencontainers.image.description="Probably the most modern and sophisticated insecure web application" \
-    org.opencontainers.image.authors="Bjoern Kimminich <bjoern.kimminich@owasp.org>" \
-    org.opencontainers.image.vendor="Open Worldwide Application Security Project" \
-    org.opencontainers.image.documentation="https://help.owasp-juice.shop" \
+    org.opencontainers.image.title="Atxor Security Lab" \
+    org.opencontainers.image.description="Web application security training platform by Atxor Security" \
+    org.opencontainers.image.authors="Atxor Security Team" \
+    org.opencontainers.image.vendor="Atxor Security" \
+    org.opencontainers.image.documentation="https://lab.atxor.my.id" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.version="20.4.0-SNAPSHOT" \
-    org.opencontainers.image.url="https://owasp-juice.shop" \
-    org.opencontainers.image.source="https://github.com/juice-shop/juice-shop" \
+    org.opencontainers.image.url="https://lab.atxor.my.id" \
+    org.opencontainers.image.source="https://github.com/oxfat/atxor" \
     org.opencontainers.image.revision=$VCS_REF \
     org.opencontainers.image.created=$BUILD_DATE
 WORKDIR /juice-shop

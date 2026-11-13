@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: atxor-security-lab
+    env: node
+    region: singapore
+    plan: starter
+    envVars:
+      - key: PORT
+        value: "3000"
+      - key: NODE_ENV
+        value: "production"
+      - key: DATABASE_FILENAME
+        value: "/data/juiceshop.sqlite"
+    buildCommand: npm install && npm run build
+    startCommand: node build/app.js
+    healthCheckPath: /
+    autoDeploy: true

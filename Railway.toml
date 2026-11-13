@@ -1,0 +1,19 @@
+[build]
+  builder = "nixpacks"
+  buildCommand = "npm install && npm run build"
+
+[deploy]
+  image = "node:24-slim"
+  startCommand = "node build/app.js"
+  healthcheckPath = "/"
+  healthcheckTimeout = 60
+  env = [
+    { key = "PORT", value = "3000" },
+    { key = "NODE_ENV", value = "production" },
+    { key = "DATABASE_FILENAME", value = "/data/juiceshop.sqlite" },
+  ]
+
+[mounts]
+  # Persistent storage for SQLite database and uploads
+  source = "juiceshop_data"
+  destination = "/data"

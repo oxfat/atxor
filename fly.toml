@@ -1,0 +1,18 @@
+app = "atxor-security-lab"
+primary_region = "sin"
+name = "atxor-security-lab"
+
+[build]
+  dockerfile = "Dockerfile.deploy"
+  image = "registry.fly.io/atxor-security-lab"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"
